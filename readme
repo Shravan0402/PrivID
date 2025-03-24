@@ -1,0 +1,58 @@
+PrivID
+
+PrivID is a privacy-preserving identity verification system leveraging zero-knowledge proofs (ZKPs) to enable secure authentication without exposing sensitive user data.
+
+Features
+	•	ZK-Based Identity Verification – Authenticate users without revealing their credentials.
+	•	On-Chain Proof Generation – Generate and verify proofs on blockchain networks.
+	•	Decentralized & Trustless – No need for centralized authorities to verify identities.
+	•	Cross-Chain Compatibility – Supports multiple blockchain ecosystems.
+	•	Optimized Gas Costs – Efficient proof verification with minimal on-chain computation.
+
+Tech Stack
+	•	Cryptography: zk-SNARKs / zk-STARKs
+	•	Smart Contracts: Solidity, Hardhat
+	•	Proof Generation: Circom, Noir
+	•	Frontend: React, Next.js (optional)
+	•	Backend: Node.js (optional)
+
+Installation
+	1.	Clone the repository:
+
+git clone https://github.com/Shravan0402/PrivID.git
+cd PrivID
+
+
+	2.	Install dependencies:
+
+npm install
+
+
+	3.	Compile circuits:
+
+circom circuits/identity.circom --r1cs --wasm --sym  
+
+
+	4.	Deploy smart contracts:
+
+npx hardhat deploy
+
+
+
+Usage
+	•	Generate a zero-knowledge proof for identity verification.
+	•	Submit the proof to the smart contract for verification.
+	•	Get on-chain confirmation of authentication.
+
+Roadmap
+	•	Implement zk-STARK support
+	•	Integrate with DID (Decentralized Identity) frameworks
+	•	Add cross-chain verification
+
+Contributing
+
+Contributions are welcome! Feel free to fork the repo, create a new branch, and submit a pull request.
+
+License
+
+MIT License. See LICENSE for details.
